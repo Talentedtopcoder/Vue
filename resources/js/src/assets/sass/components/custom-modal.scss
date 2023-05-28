@@ -1,0 +1,341 @@
+//  =================
+//      Imports
+//  =================
+
+@import '../../base/base'; // Base Variables
+
+.modal-content {
+    border: none;
+    border-radius: 6px;
+
+    hr {
+        border-top: 1px solid $m-color_3;
+    }
+
+    .modal-header {
+        padding: 12px 26px;
+        border-bottom: 1px solid $m-color_3;
+
+        h5 {
+            font-weight: 700;
+            font-size: 20px;
+            letter-spacing: 1px;
+        }
+
+        svg {
+            width: 17px;
+            color: $l-dark;
+        }
+    }
+
+    .modal-body {
+        padding: 26px 26px;
+
+        a:not(.btn) {
+            color: $primary;
+            font-weight: 600;
+        }
+
+        p {
+            color: $m-color_6;
+            letter-spacing: 1px;
+            font-size: 14px;
+            line-height: 22px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            &:not(:last-child) {
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    .modal-footer {
+        border-top: 1px solid $m-color_3;
+
+        button.btn {
+            font-weight: 600;
+            padding: 10px 25px;
+            letter-spacing: 1px;
+
+            &[data-dismiss='modal'] {
+                background-color: $white;
+                color: $primary;
+                font-weight: 700;
+                border: 1px solid #e8e8e8;
+            }
+        }
+
+        .btn.btn-primary {
+            background-color: $primary;
+            color: $white;
+            border: 1px solid $primary;
+        }
+    }
+}
+
+/*
+    Modal Success
+*/
+
+.modal-success .modal-content {
+    background-color: $l-success;
+}
+
+/*
+    Modal Video
+*/
+
+.modal-video {
+    .modal-content {
+        background-color: transparent;
+    }
+
+    .video-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        padding-top: 30px;
+        height: 0;
+        overflow: hidden;
+    }
+
+    .modal {
+        &#videoMedia1 .modal-header,
+        &#videoMedia2 .modal-header {
+            border: none;
+            padding: 0;
+        }
+    }
+
+    .video-container {
+        iframe,
+        object,
+        embed {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .modal {
+        &#videoMedia1 .modal-header .close,
+        &#videoMedia2 .modal-header .close {
+            color: #fff !important;
+            opacity: 1;
+        }
+    }
+
+    .modal-content .modal-header svg {
+        color: $white;
+    }
+}
+
+/*
+    Modal Notification
+*/
+
+.modal-notification .modal-body .icon-content {
+    margin: 0 0 20px 0px;
+    display: inline-block;
+    padding: 13px;
+    border-radius: 50%;
+    background: $m-color_1;
+    color: $black;
+
+    svg {
+        width: 36px;
+        height: 36px;
+        color: $m-color_6;
+        fill: rgba(0, 23, 55, 0.08);
+    }
+}
+
+/*
+    Profile
+*/
+
+.profile-modal .modal-content {
+    background-color: $secondary;
+
+    .btn-close {
+        background: transparent
+            url('data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 16 16%27 fill=%27%23fff%27%3e%3cpath d=%27M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z%27/%3e%3c/svg%3e')
+            center/1em auto no-repeat;
+        background-size: 10px;
+        padding: 10px;
+        position: absolute;
+        right: 0;
+        z-index: 1;
+    }
+
+    .modal-header,
+    .modal-footer {
+        border: none;
+    }
+
+    .modal-body p {
+        color: $white;
+    }
+
+    .modal-footer button.btn {
+        box-shadow: none;
+    }
+}
+
+/*
+    Slider
+*/
+
+.modal#sliderModal .modal-content {
+    border: 1px solid transparent;
+    background-color: transparent;
+
+    .modal-body {
+        .carousel-indicators {
+            top: 37%;
+            bottom: auto;
+            display: block;
+            left: auto;
+            margin: auto;
+            right: 14px;
+        }
+
+        a {
+            &.carousel-control-prev span.carousel-control-prev-icon {
+                position: absolute;
+                bottom: 14px;
+                left: 7px;
+                background-image: none;
+                color: $primary;
+            }
+
+            &.carousel-control-next span.carousel-control-next-icon {
+                position: absolute;
+                bottom: 14px;
+                right: 7px;
+                background-image: none;
+                color: $primary;
+            }
+
+            &.carousel-control-prev span.carousel-control-prev-text {
+                position: absolute;
+                bottom: 17px;
+                left: 30px;
+                color: $primary;
+            }
+
+            &.carousel-control-next span.carousel-control-next-text {
+                position: absolute;
+                bottom: 17px;
+                right: 30px;
+                color: $primary;
+            }
+        }
+    }
+    button.btn-close {
+        position: absolute;
+        z-index: 2;
+        right: 16px;
+        top: 13px;
+    }
+}
+
+.carousel-indicators {
+    li {
+        background-color: #a1a3ac !important;
+    }
+
+    .active {
+        background-color: $primary !important;
+    }
+}
+
+.modal-content .modal-body a:not(.btn) {
+    opacity: 1;
+}
+
+/*
+    Login
+*/
+
+.login-modal,
+.register-modal {
+    .modal-header {
+        text-align: center;
+        border: none;
+        padding-bottom: 0;
+    }
+
+    .modal-body {
+        .form-group {
+            position: relative;
+
+            svg {
+                position: absolute;
+                width: 20px;
+                top: 11px;
+                left: 9px;
+                color: $primary;
+                fill: rgba(27, 85, 226, 0.2392156863);
+            }
+
+            input {
+                padding-left: 35px;
+                border: none;
+                border-bottom: 1px solid $m-color_3;
+                border-radius: 0;
+
+                &.form-control:focus {
+                    box-shadow: none;
+                }
+            }
+        }
+
+        .division {
+            text-align: center;
+            font-size: 13px;
+            margin: 16px 0;
+        }
+
+        .social {
+            text-align: center;
+
+            a {
+                background: transparent;
+                box-shadow: none;
+                border: 2px solid $m-color_3;
+
+                &.social-fb svg {
+                    color: $primary;
+                }
+
+                &.social-github svg {
+                    color: $danger;
+                }
+
+                &.social-fb .brand-name {
+                    color: $primary;
+                }
+
+                &.social-github .brand-name {
+                    color: $danger;
+                }
+            }
+        }
+    }
+}
+
+/*
+    Register
+*/
+
+@media (min-width: 576px) {
+    .login-modal .modal-dialog,
+    .register-modal .modal-dialog {
+        max-width: 330px;
+    }
+}

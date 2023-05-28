@@ -1,0 +1,191 @@
+//  =================
+//      Imports
+//  =================
+
+@import '../../base/base'; // Base Variables
+
+.popovers-section h6 {
+    color: $dark;
+    font-size: 0.875rem;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.popover {
+    border: 1px solid $m-color_2;
+    border-radius: 4px;
+    .popover-body {
+        padding: 0.5rem 0.75rem;
+    }
+}
+
+/*
+	Popovers
+*/
+
+.popover-primary {
+    background-color: $l-primary;
+    border-color: $l-primary;
+}
+
+.popover-success {
+    background-color: $l-success;
+    border-color: $l-success;
+}
+
+.popover-info {
+    background-color: $l-info;
+    border-color: $l-info;
+}
+
+.popover-danger {
+    background-color: $l-danger;
+    border-color: $l-danger;
+}
+
+.popover-warning {
+    background-color: $l-warning;
+    border-color: $l-warning;
+}
+
+.popover-secondary {
+    background-color: $l-secondary;
+    border-color: $l-secondary;
+}
+
+.popover-dark {
+    background-color: $l-dark;
+    border-color: $l-dark;
+}
+
+/* 		popover Arrow 	*/
+
+.popover-primary .popover-arrow {
+    &:after,
+    &:before {
+        border-top-color: $l-primary !important;
+    }
+}
+
+.popover-success .popover-arrow {
+    &:after,
+    &:before {
+        border-top-color: $l-success !important;
+    }
+}
+
+.popover-info .popover-arrow {
+    &:after,
+    &:before {
+        border-top-color: $l-info !important;
+    }
+}
+
+.popover-danger .popover-arrow {
+    &:after,
+    &:before {
+        border-top-color: $l-danger !important;
+    }
+}
+
+.popover-warning .popover-arrow {
+    &:after,
+    &:before {
+        border-top-color: $l-warning !important;
+    }
+}
+
+.popover-secondary .popover-arrow {
+    &:after,
+    &:before {
+        border-top-color: $l-secondary !important;
+    }
+}
+
+.popover-dark .popover-arrow {
+    &:after,
+    &:before {
+        border-top-color: $l-dark !important;
+    }
+}
+
+/* 		popover Header 		*/
+
+.popover-primary .popover-header {
+    background-color: $l-primary;
+    border: none;
+    color: $primary;
+}
+
+.popover-success .popover-header {
+    background-color: $l-success;
+    border: none;
+    color: $success;
+}
+
+.popover-info .popover-header {
+    background-color: $l-info;
+    border: none;
+    color: $info;
+}
+
+.popover-danger .popover-header {
+    background-color: $l-danger;
+    border: none;
+    color: $danger;
+}
+
+.popover-warning .popover-header {
+    background-color: $l-warning;
+    border: none;
+    color: $warning;
+}
+
+.popover-secondary .popover-header {
+    background-color: $l-secondary;
+    border: none;
+    color: $secondary;
+}
+
+.popover-dark .popover-header {
+    background-color: $l-dark;
+    border: none;
+    color: $dark;
+}
+
+/*  	Popover Body 	*/
+
+.popover-primary .popover-body {
+    background-color: $l-primary;
+    color: $primary;
+}
+
+.popover-success .popover-body {
+    background-color: $l-success;
+    color: $success;
+}
+
+.popover-info .popover-body {
+    background-color: $l-info;
+    color: $info;
+}
+
+.popover-danger .popover-body {
+    background-color: $l-danger;
+    color: $danger;
+}
+
+.popover-warning .popover-body {
+    background-color: $l-warning;
+    color: $warning;
+}
+
+.popover-secondary .popover-body {
+    background-color: $l-secondary;
+    color: $secondary;
+}
+
+.popover-dark .popover-body {
+    background-color: $l-dark;
+    color: $dark;
+}
